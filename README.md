@@ -12,7 +12,9 @@ The script only has a single dependency: `playsound`. Which is used to... you kn
 Just `git clone https://github.com/Fiery-Penguin/SimplePomodoro `and `pip install playsound` to get the dependency if it's not already installed and you should be good to go. don't spend too much time on all this, go get some work done.
 
 ## To Do
+- [ ] Fix the bug where resizing can cause the timer to break due to out of bounds errors in arrays
 - [ ] Add option to pause timer
 - [ ] Make bell sound shorter
 - [ ] Allow for muting bell
 - [ ] Add custom timer configurations that don't require changing hard-coded timings
+- [ ] Have timer run in background and use terminal as a display independent of the timer itself
