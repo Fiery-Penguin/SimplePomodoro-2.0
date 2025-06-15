@@ -1,4 +1,6 @@
 # Simple Pomodoro Timer 2
+![](figures/Preview_Image.png)
+
 A Reskin of the previous SimplePomodoro, which is a simple pomodoro timer i made simply because i was tired of people overcomplicating pomodoro's and most timers not having a visual aspect to them. A lot of timers out there do fancy things like sessions and shit, but honestly, a good pomodoro just gives you the work time and the resting time and nothing more. I don't want to spend time setting up the perfect pomodoro config to tell me what i should be doing in a given session, i have notes for that, i just wanna get to work. Simple as that.
 
 ## Changes since 1.0:
