@@ -18,5 +18,5 @@ Just `git clone https://github.com/Fiery-Penguin/SimplePomodoro `and `pip instal
 - [ ] Add option to pause timer
 - [ ] Make bell sound shorter
 - [ ] Allow for muting bell
-- [ ] Add custom timer configurations that don't require changing hard-coded timings
+- [x] Add custom timer configurations that don't require changing hard-coded timings
 - [ ] Have timer run in background and use terminal as a display independent of the timer itself

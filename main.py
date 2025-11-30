@@ -2,6 +2,10 @@ import os  # For use in locating paths
 from playsound import playsound  # For playing the alarm sounds
 import time  # For sleeping
 import subprocess
+import configparser
+
+# Retrieve the path to the script
+path = os.path.dirname(__file__)  # Get the path to the project root
 
 # ======================== C O N F I G U R A T I O N ======================== #
 
@@ -9,10 +13,18 @@ import subprocess
 barChar = "⣿"
 progressChar = "█"
 
+configPath = path + "/config.ini"
+
+# Initialise the config parser
+config = configparser.ConfigParser()
+
+# Read the config file
+config.read(configPath)
+
 # Set the work and rest times in minutes
-prepTime = 1  # minutes
-workTime = 50  # minutes
-restTime = 10  # minutes
+prepTime = int(config.get('General', 'prepTime'))  # minutes
+workTime = int(config.get('General', 'workTime'))  # minutes
+restTime = int(config.get('General', 'restTime'))  # minutes
 
 # =========================================================================== #
 
@@ -26,12 +38,8 @@ marginOffset = 6
 # Initiate the session counter (not used)
 session = 1
 
-# Retrieve the path to the script (used for playing the sound)
-path = os.path.dirname(__file__)  # Get the path to the project root
-
 # Define the path to the alarm sound
-bells = os.path.join(path, "Pomodoro Alarm Bells.mp3")
-
+bells = path + "/Pomodoro Alarm Bells.mp3"
 
 # The rendering function
 def renderProgressBar(message, currentTime, fullTime, colour):
